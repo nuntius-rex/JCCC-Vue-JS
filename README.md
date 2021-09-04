@@ -1,1 +1,3 @@
-# JCCC-Vue-JS
+# JCCC Vue JS
+
+Coming Soon!
