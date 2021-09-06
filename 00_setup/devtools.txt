@@ -1,0 +1,5 @@
+Docs Page:
+
+NOTE: This will detect a Node served Vue.js page. Browser only pages do not register!!!
+
+https://devtools.vuejs.org/guide/installation.html#settings

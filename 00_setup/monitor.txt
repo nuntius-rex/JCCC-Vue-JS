@@ -1,0 +1,7 @@
+
+The book recommends Simple Hot Reload Server.
+However, this tool does not seem to run via the hrs command as described or on the
+NPM package instructions. I generally use nodemon.
+
+npm install nodemon
+npx nodemon server.js

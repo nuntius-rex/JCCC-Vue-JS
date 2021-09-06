@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS Browser - Served through Node JS</title>
+
+    <script src="https:cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  </head>
+  <body>
+
+    <div id="app">
+      {{ message }} {{test}}
+    </div>
+
+    <script type="text/javascript">
+
+      var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue! Served from Node JS!'
+        }
+      })
+    </script>
+
+
+  </body>
+</html>
