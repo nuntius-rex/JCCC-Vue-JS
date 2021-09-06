@@ -1,3 +1,5 @@
 # JCCC Vue JS
 
-Coming Soon!
+This class is currently being revised.
+
+Updates Coming Soon!
