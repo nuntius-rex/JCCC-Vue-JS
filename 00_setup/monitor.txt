@@ -1,7 +1,15 @@
 
 The book recommends Simple Hot Reload Server.
-However, this tool does not seem to run via the hrs command as described or on the
-NPM package instructions. I generally use nodemon.
 
-npm install nodemon
-npx nodemon server.js
+However, this tool does not run on some operating systems.
+
+Here is an example of how to do the same with Nodemon and Reload:
+```
+https://github.com/nuntius-rex/nodemon-reload
+```
+Note: The following script will need to be added to each example as needed:
+```
+<script src="/reload/reload.js"></script>
+```
+
+See template 01_browser/2c_template.html for usage along with Vue.js.
