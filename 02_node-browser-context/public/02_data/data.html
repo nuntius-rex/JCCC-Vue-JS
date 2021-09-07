@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue.js Browser</title>
+
+    <!-- There are multiple CDN options available  -->
+    <script src="https:cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  </head>
+  <body>
+
+    <div id="app">
+      {{msg_text}} {{msg_count}} : {{message[0]}} {{message[1]}} {{msg.welcome}}
+    </div>
+
+    <script type="text/javascript">
+
+      var app = new Vue({
+        el: '#app', //some older versions use document.getElementById('app')
+        /*
+        Since Data is an object, it can be of any type of object data, and of multiple types:
+        */
+
+        data: {
+          msg_text:"Message: ",
+          msg_count:1,
+          message: [
+            'Hello Vue!',
+            'Hello Again!'
+          ],
+          msg:{
+            "welcome" : "Welcome to Vue.js"
+          }
+        }
+      })
+    </script>
+
+    <!-- To utilize node reload to auto refresh on changes: -->
+    <script src="/reload/reload.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+
+App Ideas:
+
+- CRUD APP
+- TODO LIST
+- CHAT
+- CMS
+- Link Sharing
+- Shopping List
+- Component Projects
+- Games from JavaScript Classes

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS Browser</title>
+
+    <!-- There are multiple CDN options available  -->
+    <script src="https:cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  </head>
+  <body>
+
+    <div id="app">
+      {{ message }}
+    </div>
+
+    <script type="text/javascript">
+
+      /*
+        Call Vue as a new instance and pass it and object as instructions:
+
+        el: is the element we want to target (note the query-style reference),
+        in the book uses the long form js.
+
+        data: send the data we want to write as an object
+
+      */
+      var app = new Vue({
+        el: '#app', //some older versions use document.getElementById('app')
+        data: {
+          message: 'Hello Vue!'
+        }
+      })
+    </script>
+
+    <!-- To utilize node reload to auto refresh on changes: -->
+    <script src="/reload/reload.js"></script>
+  </body>
+</html>

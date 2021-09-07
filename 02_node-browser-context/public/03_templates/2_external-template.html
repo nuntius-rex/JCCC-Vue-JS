@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue.js Using Template 2</title>
+    <script src="https:cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+
+    <div id="root">
+        <!-- content will be written here -->
+    </div>
+
+    <!-- TYPE 3 - External: Note type "x-template" -->
+    <script type="x-template" id="temp1">
+      <div>
+        <h1>First Line</h1>
+        <p>Second line</p>
+        <p>Third line</p>
+      </div>
+    </script>
+
+
+    <script type="text/javascript">
+      var vm = new Vue({
+        el: '#root',
+
+        /*TYPE: 1 - Old multiline HTML:
+        template:"<div><h1>First Line</h1>"
+          +"<p>Second line</p>"
+          +"<p>Third line</p></div>",
+        */
+
+
+        /*TYPE 2 - Template Literal HTML:
+        template:`<div>
+          <h1>First Line</h1>
+          <p>Second line</p>
+          <p>Third line</p>
+        </div>`,
+        */
+
+
+        template: "#temp1"
+
+      })
+    </script>
+
+
+
+
+
+  </body>
+</html>
