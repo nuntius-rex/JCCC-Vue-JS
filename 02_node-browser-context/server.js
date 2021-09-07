@@ -1,14 +1,13 @@
 const express=require('express');
+const reload = require('reload');
 const app=express();
 const port=8000;
 
-//Dynamically route supporting files:
+//Dynamically route files:
 app.use(express.static(__dirname+'/public'));
 
-//Default SPA Page - all page request will default to index.html:
-app.get('/*',function(req,res){
-  res.sendFile(__dirname+'/public/index.html');
-});
 
-app.listen(port);
-console.log(`Listening on http://localhost:${port}`);
+app.listen(port, () => {
+  console.log(`Listening on http://localhost:${port}`);
+})
+reload(app);

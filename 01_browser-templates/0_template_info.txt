@@ -1,0 +1,6 @@
+The following are simple starter templates for browser only Vue.js.
+
+1.) Basic.html is a simple explanation.
+2.) 2A matches the book Vue.js Basic Concepts default
+3.) 2B is the same as the above, but with a query reference instead of document.getElementById
+4.) 2C is for usage with "nodemon reload" when serving from Node. Which will refresh HTML changes on load.

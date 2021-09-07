@@ -1,6 +1,22 @@
 {
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.12"
-  }
+    "nodemon": "^2.0.12",
+    "reload": "^3.2.0"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "jccc-vue-js-browser-context",
+  "version": "1.0.0",
+  "description": "Node server for simple browser context, with express, nodemon and reload",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [
+    "vue",
+    "browser",
+    "context"
+  ],
+  "author": "Dan Guinn",
+  "license": "ISC"
 }

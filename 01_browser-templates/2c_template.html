@@ -2,27 +2,26 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Vue.js Browser - Served through Node JS</title>
-
+    <title>Vue.js Using Template</title>
     <script src="https:cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
   </head>
   <body>
 
-    <div id="app">
-      <!-- content will be written here -->
+    <div id="root">
+        <!-- content will be written here -->
     </div>
-
     <script type="text/javascript">
+      var vm = new Vue({
+        el: '#root',
+        data:{
 
-      var app = new Vue({
-        el: '#app',
-        data: {
-          message: 'Hello Vue! Served from Node JS! Very cool!'
+        },
+        methods:{
+
         },
         template:`
           <div>
-            {{ message }}
+            <h1>Hello Vue!</h1>
           </div>
         `
       })
